@@ -31,11 +31,11 @@ jsonSource_DepartamentosProductoresdeCaaPanelera_1.addFeatures(features_Departam
                 source:jsonSource_DepartamentosProductoresdeCaaPanelera_1, 
                 style: style_DepartamentosProductoresdeCaaPanelera_1,
     title: 'Departamentos Productores de Caña Panelera<br />\
-    <img src="styles/legend/DepartamentosProductoresdeCaaPanelera_1_0.png" />  2 - 4 <br />\
-    <img src="styles/legend/DepartamentosProductoresdeCaaPanelera_1_1.png" />  4 - 5 <br />\
-    <img src="styles/legend/DepartamentosProductoresdeCaaPanelera_1_2.png" />  5 - 7 <br />\
-    <img src="styles/legend/DepartamentosProductoresdeCaaPanelera_1_3.png" />  7 - 9 <br />\
-    <img src="styles/legend/DepartamentosProductoresdeCaaPanelera_1_4.png" />  9 - 11 <br />'
+    <img src="styles/legend/DepartamentosProductoresdeCaaPanelera_1_0.png" />  1.0 - 3.6 <br />\
+    <img src="styles/legend/DepartamentosProductoresdeCaaPanelera_1_1.png" />  3.6 - 5.3 <br />\
+    <img src="styles/legend/DepartamentosProductoresdeCaaPanelera_1_2.png" />  5.3 - 7.1 <br />\
+    <img src="styles/legend/DepartamentosProductoresdeCaaPanelera_1_3.png" />  7.1 - 8.8 <br />\
+    <img src="styles/legend/DepartamentosProductoresdeCaaPanelera_1_4.png" />  8.8 - 12.0 <br />'
         });var format_RendimientodeCaaPaneleraToneladasHa2017_2 = new ol.format.GeoJSON();
 var features_RendimientodeCaaPaneleraToneladasHa2017_2 = format_RendimientodeCaaPaneleraToneladasHa2017_2.readFeatures(json_RendimientodeCaaPaneleraToneladasHa2017_2, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
@@ -53,13 +53,13 @@ lyr_LimiteDepartamental_0.setVisible(true);lyr_DepartamentosProductoresdeCaaPane
 var layersList = [baseLayer,lyr_LimiteDepartamental_0,lyr_DepartamentosProductoresdeCaaPanelera_1,lyr_RendimientodeCaaPaneleraToneladasHa2017_2];
 lyr_LimiteDepartamental_0.set('fieldAliases', {'nombre_dep': 'nombre_dep', });
 lyr_DepartamentosProductoresdeCaaPanelera_1.set('fieldAliases', {'DEPT': 'DEPT', 'A.SEM.(Ha)': 'A.SEM.(Ha)', 'A.COS.(Ha)': 'A.COS.(Ha)', 'PROD.(Ton)': 'PROD.(Ton)', 'R.(Ton/Ha)': 'R.(Ton/Ha)', 'No': 'No', });
-lyr_RendimientodeCaaPaneleraToneladasHa2017_2.set('fieldAliases', {'Id': 'Id', 'DEPT': 'DEPT', 'DEPARTAMEN': 'DEPARTAMEN', 'CULTIVO': 'CULTIVO', 'AÃ‘O': 'AÃ‘O', 'Ãrea_Semb': 'Ãrea_Semb', 'Ãrea_Cose': 'Ãrea_Cose', 'ProducciÃ³': 'ProducciÃ³', 'Rendimient': 'Rendimient', });
+lyr_RendimientodeCaaPaneleraToneladasHa2017_2.set('fieldAliases', {});
 lyr_LimiteDepartamental_0.set('fieldImages', {'nombre_dep': 'TextEdit', });
 lyr_DepartamentosProductoresdeCaaPanelera_1.set('fieldImages', {'DEPT': 'TextEdit', 'A.SEM.(Ha)': 'TextEdit', 'A.COS.(Ha)': 'TextEdit', 'PROD.(Ton)': 'TextEdit', 'R.(Ton/Ha)': 'TextEdit', 'No': 'TextEdit', });
-lyr_RendimientodeCaaPaneleraToneladasHa2017_2.set('fieldImages', {'Id': 'TextEdit', 'DEPT': 'TextEdit', 'DEPARTAMEN': 'TextEdit', 'CULTIVO': 'TextEdit', 'AÃ‘O': 'TextEdit', 'Ãrea_Semb': 'TextEdit', 'Ãrea_Cose': 'TextEdit', 'ProducciÃ³': 'TextEdit', 'Rendimient': 'TextEdit', });
+lyr_RendimientodeCaaPaneleraToneladasHa2017_2.set('fieldImages', {});
 lyr_LimiteDepartamental_0.set('fieldLabels', {'nombre_dep': 'inline label', });
 lyr_DepartamentosProductoresdeCaaPanelera_1.set('fieldLabels', {'DEPT': 'inline label', 'A.SEM.(Ha)': 'inline label', 'A.COS.(Ha)': 'inline label', 'PROD.(Ton)': 'inline label', 'R.(Ton/Ha)': 'inline label', 'No': 'inline label', });
-lyr_RendimientodeCaaPaneleraToneladasHa2017_2.set('fieldLabels', {'Id': 'no label', 'DEPT': 'no label', 'DEPARTAMEN': 'no label', 'CULTIVO': 'no label', 'AÃ‘O': 'no label', 'Ãrea_Semb': 'no label', 'Ãrea_Cose': 'no label', 'ProducciÃ³': 'no label', 'Rendimient': 'no label', });
+lyr_RendimientodeCaaPaneleraToneladasHa2017_2.set('fieldLabels', {});
 lyr_RendimientodeCaaPaneleraToneladasHa2017_2.on('precompose', function(evt) {
     evt.context.globalCompositeOperation = 'normal';
 });
